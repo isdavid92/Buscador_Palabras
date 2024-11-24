@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import ListaPalabras from './Components/Lista_Palabras/ListaPalabras';
+import Matriz from './Components/Matriz/Matriz';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="titulo">
+        <h1 className="h1Titulo">Buscador de palabras</h1>
+      </div>
+      <ListaPalabras />
+      <Matriz />
     </div>
   );
 }
