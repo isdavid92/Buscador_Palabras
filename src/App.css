@@ -11,7 +11,7 @@
   background-color: rgba(0, 255, 255, 0.11);
   display: flex;
   width: 60%;
-  margin: auto;
+  margin: 10vh auto 0 auto;
 }
 
 .h1Titulo {

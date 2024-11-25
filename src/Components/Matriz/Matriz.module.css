@@ -1,0 +1,11 @@
+.Matriz {
+    margin: auto;
+    background-color: rgba(0, 255, 255, 0.075);
+    width: 60%;
+    display: flex;
+}
+
+.labelLista {
+    margin: 0 auto auto 0;
+    color: white;
+}

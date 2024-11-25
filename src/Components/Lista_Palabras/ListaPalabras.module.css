@@ -3,13 +3,41 @@
     background-color: rgba(0, 255, 255, 0.075);
     width: 60%;
     display: flex;
+    flex-direction: column;
+}
+
+.listaPalabras {
+    display: flex;
+}
+
+.inputPalabras {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    width: 70%;
+    background-color: rgba(165, 42, 42, 0.089);
 }
 
 .labelLista {
-    margin: 0 auto auto 0;
+    margin: 0 auto 2vh 0;
     color: white;
 }
 
 .textareaLista {
-    
+    margin: auto;
+    margin-left: 0;
+}
+
+.palabras {
+    width: 30%;
+    height: 100%;
+    background-color: rgba(165, 42, 42, 0.171);
+}
+
+.divBoton {
+    margin-top: 10vh;
+}
+
+.boton {
+    cursor: pointer;
 }

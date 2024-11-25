@@ -1,47 +1,15 @@
-import axios from "axios";
-import { ADD_FAV, REMOVE_FAV, FILTER, ORDER } from "./actions_types";
+import { ADD_PALABRA, ADD_MATRIZ } from "./actions_types";
 
-const URL = 'http://localhost:3001/rickandmorty/fav';
-
-export const addFav = (character) => {
-    try {
-        return async (dispatch) => {
-            const { data } = await axios.post(URL, character);
-            return dispatch({
-                        type: ADD_FAV,
-                        payload: data
-                    })
-    
-        };
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-export const removeFav = (id) => {
-    try {
-        return async (dispatch) => {
-            const { data } = await axios.delete(`${URL}/${id}`);
-            return dispatch({
-                type: REMOVE_FAV,
-                payload: data
-            })
-        };
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-export const filterCards = (gender) => {
+export const addPalabra = (palabra) => {
     return {
-        type: FILTER,
-        payload: gender
+        type: ADD_PALABRA,
+        payload: palabra
     }
 }
 
-export const orderCards = (orden) => {
+export const addMatriz = (matriz) => {
     return {
-        type: ORDER,
-        payload: orden
+        type: ADD_MATRIZ,
+        payload: matriz
     }
 }

@@ -1,46 +1,22 @@
-import { ADD_FAV, REMOVE_FAV, FILTER, ORDER } from "./actions_types";
+import { ADD_PALABRA, ADD_MATRIZ } from "./actions_types";
 
 const inicialState = {
-    myFavorites: [],
-    allCharacters: []
+    palabras: [],
+    matriz: []
 }
 
 const reducer = (state = inicialState, { type, payload }) => {
     switch (type) {
-        case ADD_FAV:
+        case ADD_PALABRA:
             return {
                 ...state,
-                myFavorites: payload,
-                allCharacters: payload
+                palabras: [...state.palabras, payload]
             }
 
-        case REMOVE_FAV:
+        case ADD_MATRIZ:
             return {
                 ...state,
-                myFavorites: payload,
-                allCharacters: payload
-            }
-
-        case FILTER:
-            if ( payload==="todos" ) {
-                return {
-                ...state,
-                allCharacters: [...state.allCharacters],
-                myFavorites: [...state.allCharacters]
-                }
-            } else {
-                return {
-                    ...state,
-                allCharacters: [...state.allCharacters],
-                myFavorites: state.allCharacters.filter(per => per.gender === payload)
-                }
-            }
-
-        case ORDER:
-            return {
-                ...state,
-                allCharacters: [...state.allCharacters],
-                myFavorites: state.myFavorites.sort((a, b) => payload === 'A' ? a.id - b.id : b.id - a.id)
+                matriz: payload
             }
 
         default:
