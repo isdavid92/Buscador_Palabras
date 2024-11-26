@@ -42,6 +42,7 @@ const ListaPalabras = () => {
             dispatch(addPalabra(listaLocal));
         }
         console.log(listaGlobal);
+        console.log("listis");
     }, [listaGlobal, listaLocal, borrar]);
     
     useEffect(() => {
