@@ -9,18 +9,17 @@ const ListaPalabras = () => {
     const [listaLocal, setListaLocal] = useState([]);
     const [texto, setTexto] = useState('');
     const [borrar, setBorrar] = useState(true);
-    const [noDispatch, setNoDispatch] = useState(!borrar);
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    
-        const separadorPalabras = (texto) => {
-            let palabras = texto.split(/\s+/).filter(str => str.length > 1);
-            let palabrasMayus = palabras.map(palabra => palabra.toUpperCase());
-            return palabrasMayus
-        };
+
+    const separadorPalabras = (texto) => {
+        let palabras = texto.split(/\s+/).filter(str => str.length > 1);
+        let palabrasMayus = palabras.map(palabra => palabra.toUpperCase());
+        return palabrasMayus
+    };
 
     const listaDerecha = () => {
-        if (listaLocal.length>0) {
+        if (listaLocal.length > 0) {
             return listaLocal.map((element, index) => (
                 <div key={index} className={style.palabra}>{element + " <"}</div>
             ));
@@ -35,15 +34,18 @@ const ListaPalabras = () => {
     }, [texto]);
 
     useEffect(() => {
-        if (listaLocal.length>0) {
+        if (borrar == false) {
+            setBorrar(true)
+            setTexto("");
+            setListaLocal([])
+        } else if (listaLocal.length>0) {
             dispatch(addPalabra(listaLocal));
-            console.log(listaGlobal);
         }
-    }, [listaGlobal, listaLocal]);
-
+        console.log(listaGlobal);
+    }, [listaGlobal, listaLocal, borrar]);
+    
     useEffect(() => {
         if (listaLocal.length>0) {
-            setTexto("");
             dispatch(resetPalabra());
         }
     }, [borrar]);
