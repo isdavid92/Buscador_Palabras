@@ -1,15 +1,21 @@
-import { ADD_PALABRA, ADD_MATRIZ } from "./actions_types";
+import { ADD_PALABRA, ADD_MATRIZ, RESET_PALABRA } from "./actions_types";
 
-export const addPalabra = (palabra) => {
+export const addPalabra = (arr) => {
     return {
         type: ADD_PALABRA,
-        payload: palabra
+        payload: arr
     }
-}
+};
+
+export const resetPalabra = () => {
+    return {
+        type: RESET_PALABRA
+    }
+};
 
 export const addMatriz = (matriz) => {
     return {
         type: ADD_MATRIZ,
         payload: matriz
     }
-}
+};

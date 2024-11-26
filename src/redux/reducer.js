@@ -1,4 +1,4 @@
-import { ADD_PALABRA, ADD_MATRIZ } from "./actions_types";
+import { ADD_PALABRA, ADD_MATRIZ, RESET_PALABRA } from "./actions_types";
 
 const inicialState = {
     palabras: [],
@@ -10,7 +10,13 @@ const reducer = (state = inicialState, { type, payload }) => {
         case ADD_PALABRA:
             return {
                 ...state,
-                palabras: [...state.palabras, payload]
+                palabras: payload
+            }
+
+        case RESET_PALABRA:
+            return {
+                ...state,
+                palabras: []
             }
 
         case ADD_MATRIZ:
