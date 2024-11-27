@@ -9,6 +9,7 @@
 
 .titulo {
   display: flex;
+  flex-direction: column;
   width: 60%;
   margin: 10vh auto 0 auto;
 }
@@ -16,4 +17,9 @@
 .h1Titulo {
   margin: auto;
   color: white;
+}
+
+.h1TituloResultado {
+  margin: auto;
+  color: rgb(252, 243, 126);
 }

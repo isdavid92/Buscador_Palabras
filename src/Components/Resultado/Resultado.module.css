@@ -1,3 +1,31 @@
 .Resultado {
+    margin: auto;
     display: flex;
+    width: 80%;
+}
+
+.resultado {
+    display: flex;
+    width: 100%;
+}
+
+.sopaDeLetras {
+    display: grid;
+    grid-template-columns: repeat(14, 25px);
+}
+
+.letra {
+    width: 25px;
+    height: 22px;
+    margin: auto;
+    color: yellow;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.palabras {
+    margin-left: auto;
+    background-color: rgba(0, 255, 255, 0.164);
+    width: 50%;
+    height: 100%;
 }

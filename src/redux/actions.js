@@ -1,9 +1,9 @@
 import { ADD_PALABRA, ADD_MATRIZ, RESET_PALABRA } from "./actions_types";
 
-export const addPalabra = (arr) => {
+export const addPalabra = (palabras) => {
     return {
         type: ADD_PALABRA,
-        payload: arr
+        payload: palabras
     }
 };
 
@@ -14,6 +14,7 @@ export const resetPalabra = () => {
 };
 
 export const addMatriz = (matriz) => {
+    
     return {
         type: ADD_MATRIZ,
         payload: matriz

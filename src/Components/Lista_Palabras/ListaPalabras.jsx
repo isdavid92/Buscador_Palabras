@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import style from "./ListaPalabras.module.css";
 import { useNavigate } from "react-router-dom";
-import { addPalabra, resetPalabra } from "../../redux/actions";
 import { useDispatch, useSelector } from "react-redux";
+import { addPalabra, resetPalabra } from "../../redux/actions";
 
 const ListaPalabras = () => {
     const listaGlobal = useSelector(state => state.palabras);
@@ -41,7 +41,6 @@ const ListaPalabras = () => {
         } else if (listaLocal.length>0) {
             dispatch(addPalabra(listaLocal));
         }
-        console.log(listaGlobal);
     }, [listaGlobal, listaLocal, borrar]);
     
     useEffect(() => {
