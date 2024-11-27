@@ -23,9 +23,54 @@
     text-align: center;
 }
 
-.palabras {
+.contPalabras {
     margin-left: auto;
-    background-color: rgba(0, 255, 255, 0.164);
     width: 50%;
     height: 100%;
+    display: flex;
+}
+
+.noEncontradas {
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.h5no {
+    color: white;
+    margin: auto;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+.palabras {
+    border: solid 1px white;
+    height: 94%;
+}
+
+.palabraNo {
+    color: red;
+}
+
+.encontradas {
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.h5en {
+    color: white;
+    margin: auto;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+.palabraSi {
+    color: green;
 }
