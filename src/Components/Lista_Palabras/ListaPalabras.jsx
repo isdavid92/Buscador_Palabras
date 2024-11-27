@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import style from "./ListaPalabras.module.css";
 import { useNavigate } from "react-router-dom";
 import { addPalabra, resetPalabra } from "../../redux/actions";
@@ -42,7 +42,6 @@ const ListaPalabras = () => {
             dispatch(addPalabra(listaLocal));
         }
         console.log(listaGlobal);
-        console.log("listis");
     }, [listaGlobal, listaLocal, borrar]);
     
     useEffect(() => {

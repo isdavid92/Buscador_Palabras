@@ -46,6 +46,7 @@
     border-radius: 3px;
     padding: 0 5px 0 5px;
     cursor: pointer;
+    user-select: none;
 
     &&:hover {
         background-color: rgb(184, 2, 2);
@@ -75,6 +76,7 @@
     cursor: pointer;
     font-weight: 700;
     font-size: 20px;
+    user-select: none;
 
     &:hover {
         background-color: black;
