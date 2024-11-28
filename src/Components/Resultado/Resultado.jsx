@@ -24,11 +24,11 @@ const Resultado = () => {
     };
 
     const renderPalabras = (ord) => {
-        if (ord == "no") {
+        if (ord === "no") {
             return noEncontradas.map((element, index) => {
                 return <div key={index} className={style.palabraNo}>- {element}</div>
             })
-        } else if (ord == "si") {
+        } else if (ord === "si") {
             return encontradas.map((element, index) => {
                 return <div key={index} className={style.palabraSi}>- {element}</div>
             })

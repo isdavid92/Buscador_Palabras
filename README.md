@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Buscador de Palabras en Sopa de Letras
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
+Esta aplicación es un buscador de palabras en una sopa de letras. Recibe una lista de palabras y una matriz de 196 caracteres (separados por comas, espacios, tabulaciones o saltos de línea) que se ubican en una cuadrícula de 14x14. La aplicación utiliza un algoritmo para mostrar los resultados de las palabras que fueron y no fueron encontradas.
 
-## Available Scripts
+## Tecnologías Utilizadas
+- **JavaScript**: Para la lógica y funcionamiento del lado del cliente.
+- **React**: Para la creación de interfaces de usuario interactivas.
+- **Redux**: Para la gestión del estado global de la aplicación.
+- **React Router DOM**: Para el manejo de la navegación y las rutas en la aplicación.
+- **HTML5**: Para la estructura y contenido del documento.
+- **CSS3**: Para el estilo y diseño visual de la aplicación.
 
-In the project directory, you can run:
+## Recursos Especiales Utilizados
+- **Algoritmo de búsqueda**: Un algoritmo que busca palabras tanto en sentido normal como inverso en todas las direcciones dentro de la matriz de la sopa de letras.
+- **Redux**: Para manejar y mantener el estado de las palabras y la matriz de la sopa de letras de manera eficiente.
+- **React Router DOM**: Para permitir la navegación fluida entre diferentes vistas de la aplicación.
 
-### `npm start`
+## Guía de Despliegue
+Sigue estos pasos para desplegar tu aplicación:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clonar el repositorio**:
+   ```bash
+   git clone https://github.com/isdavid92/buscador_palabras.git
+   cd tu-repositorio
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Instalar dependencias**:
+   ```bash
+   npm install
 
-### `npm test`
+3. **Iniciar la aplicación en modo desarrollo**:
+   ```bash
+   npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Construir la aplicación para producción**:
+   ```bash
+   npm run build
 
-### `npm run build`
+5. **Desplegar en un servidor: Sube la carpeta build generada a tu servidor de preferencia.**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6. **Opcional: Configurar un proxy inverso (por ejemplo, Nginx) para manejar las solicitudes HTTP hacia tu aplicación.**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Contacto**
+Si tienes alguna pregunta o necesitas soporte, no dudes en contactarme a [isdavid92@hotmail.com].
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**¡Gracias por usar mi aplicación! 🚀**
