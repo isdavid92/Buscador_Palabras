@@ -40,6 +40,6 @@ Sigue estos pasos para desplegar tu aplicación:
 6. **Opcional: Configurar un proxy inverso (por ejemplo, Nginx) para manejar las solicitudes HTTP hacia tu aplicación.**
 
 **Contacto**
-Si tienes alguna pregunta o necesitas soporte, no dudes en contactarme a [isdavid92@hotmail.com].
+Si tienes alguna pregunta o necesitas soporte, no dudes en contactarme a isdavid92@hotmail.com.
 
 **¡Gracias por usar mi aplicación! 🚀**
