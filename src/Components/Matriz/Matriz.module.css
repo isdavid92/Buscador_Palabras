@@ -77,4 +77,55 @@
           color: white;
       }
   }
+
+
+
+
+
+
+  /*!_________________________________________________________ RESPONSIVE _________________________________________________________ */
+
+
+
+
+
+
+@media (max-width: 440px) {
+  .Matriz {
+    width: 100%;
+    height: 60%;
+  }
+  
+  .matriz {
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .contIput {
+    margin: 0 auto;
+    width: 80%;
+    height: 30%;
+  }
+  
+  .labelMatriz {
+    margin: 0 auto 5% auto;
+  }
+  
+  .textarea {
+    margin: 0 auto;
+  }
+  
+  .contClean {
+    height: 6%;
+  }
+  
+  .clean {
+    margin: auto;
+  }
+  
+  .sopaDeLetras {
+    width: max-content;
+    margin: 0 auto;
+  }
+}
     

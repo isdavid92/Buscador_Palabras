@@ -96,3 +96,61 @@
         color: white;
     }
 }
+
+
+
+
+
+/*!_________________________________________________________ RESPONSIVE _________________________________________________________ */
+
+
+
+
+
+
+@media (max-width: 440px) {
+    .Resultado {
+        height: 65%;
+        margin-top: 5%;
+    }
+    
+    .resultado {
+        height: 90%;
+        flex-direction: column;
+    }
+    
+    .contPalabras {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .palabraNo {
+        margin-left: 10%;
+    }
+
+    .palabraSi {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 390px) {
+    .Resultado {
+        height: 65%;
+        margin-top: 5%;
+        width: 90%;
+    }
+    
+    .resultado {
+        height: 100%;
+        flex-direction: column;
+    }
+    
+    .contPalabras {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .noEncontradas {
+        
+    }
+}

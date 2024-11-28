@@ -28,7 +28,7 @@ const Matriz = () => {
         if (letras.length === 196) {
             dispatch(addMatriz(matriz));
             navigate("/resultado");
-        } else if (text == '') {
+        } else if (text === '') {
             alert('El input no puede estar vacío.');
         } else {
             alert(`Debe haber exactamente 196 letras. Letras encontradas: ${letras.length}`);
@@ -57,6 +57,7 @@ const Matriz = () => {
                         Ingresa aquí la matriz de letras (196 letras):
                     </label>
                     <textarea
+                        className={style.textarea}
                         value={text}
                         onChange={manejarCambio}
                         placeholder="Ingresa aquí la matriz de letras (196 letras)"

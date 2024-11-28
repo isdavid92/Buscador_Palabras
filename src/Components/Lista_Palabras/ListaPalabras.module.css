@@ -85,3 +85,71 @@
         color: white;
     }
 }
+
+
+
+
+
+
+/*!_________________________________________________________ RESPONSIVE _________________________________________________________ */
+
+
+
+
+
+
+@media (max-width: 440px) {
+    .ListaPalabras {
+        width: 80%;
+        height: 60%;
+    }
+    
+    .listaPalabras {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+    }
+    
+    .inputPalabras {
+        width: 100%;
+        height: 40%;
+    }
+    
+    .labelLista {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    
+    .textareaLista {
+        margin: auto;
+        margin-top: 0;
+        height: 60%;
+        width: 80%;
+    }
+    
+    .contPalabras {
+        margin: auto;
+        width: 100%;
+        height: 60%;
+    }
+
+    .contClean {
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+    .clean {
+        margin: 0 auto;
+    }
+
+    .palabras {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .palabra {
+        margin: 0 20% 0 auto;
+        font-size: 12px;
+    }
+}
