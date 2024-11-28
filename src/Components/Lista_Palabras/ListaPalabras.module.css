@@ -61,6 +61,7 @@
     flex-direction: column;
     border: solid 1px white;
     margin-left: auto;
+    background-color: #15171a;
 }
 
 .palabra {
