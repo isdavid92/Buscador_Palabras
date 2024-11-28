@@ -22,7 +22,6 @@ Sigue estos pasos para desplegar tu aplicación:
 1. **Clonar el repositorio**:
    ```bash
    git clone https://github.com/isdavid92/buscador_palabras.git
-   cd tu-repositorio
 
 2. **Instalar dependencias**:
    ```bash
