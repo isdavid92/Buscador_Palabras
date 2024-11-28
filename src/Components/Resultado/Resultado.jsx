@@ -25,22 +25,15 @@ const Resultado = () => {
 
     const renderPalabras = (ord) => {
         if (ord == "no") {
-            // let prueba = ["hola"];
-            console.log("aqui");
             return noEncontradas.map((element, index) => {
-                return <div key={index} className={style.palabraNo}>{element}</div>
+                return <div key={index} className={style.palabraNo}>- {element}</div>
             })
         } else if (ord == "si") {
             return encontradas.map((element, index) => {
-                return <div key={index} className={style.palabraSi}>{element}</div>
+                return <div key={index} className={style.palabraSi}>- {element}</div>
             })
         }
     };
-
-    useEffect(() => {
-        console.log(encontradas);
-        console.log(noEncontradas);
-    }, [])
 
     return (
         <div className={style.Resultado}>
@@ -50,13 +43,13 @@ const Resultado = () => {
                 </div>
                 <div className={style.contPalabras}>
                     <div className={style.noEncontradas}>
-                        <h5 className={style.h5no}>NO ENCONTRADAS</h5>
+                        <h5 className={style.h5no}>NO ENCONTRADAS{" ("+noEncontradas.length+")"}</h5>
                         <div className={style.palabras}>
                             {renderPalabras("no")}
                         </div>
                     </div>
                     <div className={style.encontradas}>
-                        <h5 className={style.h5en}>ENCONTRADAS</h5>
+                        <h5 className={style.h5en}>ENCONTRADAS{" ("+encontradas.length+")"}</h5>
                         <div className={style.palabras}>
                             {renderPalabras("si")}
                         </div>

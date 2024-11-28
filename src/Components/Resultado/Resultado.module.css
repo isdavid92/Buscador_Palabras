@@ -48,11 +48,16 @@
 
 .palabras {
     border: solid 1px white;
-    height: 94%;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
 }
 
 .palabraNo {
     color: red;
+    font-size: 13.9px;
+    margin: auto;
+    margin: 0 auto 0 15%;
 }
 
 .encontradas {
@@ -73,4 +78,6 @@
 
 .palabraSi {
     color: green;
+    font-size: 13.9px;
+    margin: 0 auto 0 15%;
 }
