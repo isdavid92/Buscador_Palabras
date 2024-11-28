@@ -1,12 +1,12 @@
 import { useSelector } from "react-redux";
 import style from "./Resultado.module.css";
-import { useEffect, useState } from "react";
 import useBuscadorPalabras from "../Buscador/Buscador";
+import { useNavigate } from "react-router-dom";
 
 const Resultado = () => {
-    const palabras = useSelector(state => state.palabras);
     const matriz = useSelector(state => state.matriz);
     const { encontradas, noEncontradas } = useBuscadorPalabras();
+    const navigate = useNavigate();
 
     const cuadricula = () => {
         let contenido = matriz;
@@ -56,8 +56,7 @@ const Resultado = () => {
                     </div>
                 </div>
             </div>
-            <div className={style.boton}>
-            </div>
+            <button onClick={() => navigate("/")} className={style.boton}>{"HACER OTRA BUSQUEDA"}</button>
         </div>
     )
 };

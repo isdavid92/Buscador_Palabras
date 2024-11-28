@@ -55,11 +55,12 @@
 }
 
 .palabras {
-    width: 100%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
     border: solid 1px white;
+    margin-left: auto;
 }
 
 .palabra {

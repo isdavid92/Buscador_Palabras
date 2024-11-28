@@ -2,6 +2,7 @@
     margin: auto;
     display: flex;
     width: 80%;
+    flex-direction: column;
 }
 
 .resultado {
@@ -80,4 +81,18 @@
     color: green;
     font-size: 13.9px;
     margin: 0 auto 0 15%;
+}
+
+.boton {
+    margin: auto;
+    margin-top: 5vh;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    user-select: none;
+
+    &:hover {
+        background-color: black;
+        color: white;
+    }
 }
